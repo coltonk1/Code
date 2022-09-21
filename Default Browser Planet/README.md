@@ -1,5 +1,5 @@
 # Status:
-- ### Incomplete
+- ### Incomplete -
 ### Am I working on the project?
 ##### No, but I may come back to re-make it better
 # Project info:
