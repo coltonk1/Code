@@ -1,0 +1,39 @@
+#settings_icon {
+    position: absolute;
+    left: 7.5px;
+    top: 7.5px;
+    width: 25px;
+    transition: .5s;
+}
+
+#settings_icon:hover {
+    cursor: pointer;
+    width: 30px;
+    left: 5px;
+    top: 5px;
+    transform: rotate(180deg);
+}
+
+#open_settings_container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #ffffffcc;
+    width: 360px;
+    min-height: 100px;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+#star_speed_input::-webkit-slider-runnable-track {
+    background-color: red;   
+}
+
+#star_speed_input::-webkit-slider-thumb {
+    background:green;
+}

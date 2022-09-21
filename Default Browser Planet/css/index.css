@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+body {
+    background: #101015;
+    background-image: url("../assets/background.jpg");
+    background-blend-mode: soft-light;
+}

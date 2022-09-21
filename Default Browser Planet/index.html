@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C-L</title>
+    <link href = 'assets/mars.png' rel = 'icon'>
+    <link href = 'css/index.css' rel = 'stylesheet'>
+    <link href = 'css/google.css' rel = 'stylesheet'>
+    <link href = 'css/time.css' rel = 'stylesheet'>
+    <link href = 'css/notes.css' rel = 'stylesheet'>
+    <link href = 'css/reminders.css' rel = 'stylesheet'>
+    <link href = 'css/settings.css' rel = 'stylesheet'>
+</head>
+<body>
+    <div id = 'time_container'>
+        <div id = 'time'>12:00</div>
+        <hr>
+        <div id = 'date'>Monday 00/00/00</div>
+    </div>
+    
+    <div id = 'google_container'>
+        <div id = 'input_container'>
+            <input id = 'google' placeholder='Search Google or type a URL'>
+            <input id = 'google_prediction'>
+            <div id = 'google_history'></div>
+        </div>
+        
+        <img src = 'assets/search.png'>
+    </div>
+
+    <div id = 'history_element' class = 'g_e' style = 'display: none'>
+        <img src = 'assets/history.png'>
+        <div id = 'history_element_inner' style='z-index:3;color:grey;position:absolute;right:15px;top:0;bottom:0;margin:auto;height:20px;width:10px;cursor:pointer;padding:5px 11px;font-family:monospace;'>
+            x
+        </div>
+    </div>
+
+    <script>
+        function position(parent, speed){
+            
+        }
+    </script>
+
+    <div id = 'particle_container'>
+        <div id = 'particle' style = 'width: 25px; position: absolute; top: -500px; margin: auto; z-index: -5' draggable='false'>
+            <img id = 'particle' draggable='false' class = 'particle' style = 'width: inherit;' src = 'assets/blue_circle.png'>
+
+        </div>
+        
+    </div>
+    <img id = 'planet' draggable='false' src = 'assets/blue_planet.png' style = 'position: absolute; left: 0; right: 0; margin: auto; width: 250px; top: 250px; bottom: 0; z-index: -4;'>
+
+    <div id = 'notes_container'>
+        <div id = 'notes_title'>Notes <img id = 'notes_move' src = 'assets/move.png'> </div>
+        <div contenteditable='true' spellcheck='false' id = 'notes'></div>
+    </div>
+
+    <div id = 'reminders_container'>
+        <div id = 'reminders_title'>Reminders <img id = 'reminders_move' src = 'assets/move.png'> 
+            <div class = 'reminder_img'><img src = 'assets/reminder_red.png' draggable="false"> 0 </div>
+            <div class = 'reminder_img'><img src = 'assets/reminder_orange.png' draggable="false"> 0 </div>
+            <div class = 'reminder_img'><img src = 'assets/reminder_green.png' draggable="false"> 0 </div>
+            <div class = 'reminder_img'><img src = 'assets/reminder.png' draggable="false"> 0 </div>
+        </div>
+        <div id = 'reminders'>
+            <div class = 'reminder'>
+                <div id = 're_title_container'>
+                    <div id = 're_title'>Title</div>
+                </div><div id = 're_description_container'>
+                    <div id = 're_description'>Description</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id = 'settings_container'>
+        <img id = 'settings_icon' src = 'assets/settings.png'>
+        <div id = 'open_settings_container'>
+            <input type = 'range' id = 'star_speed_input'>
+        </div>
+    </div>
+    
+
+    <script src = 'js/google.js'></script>
+    <script src = 'js/google_prediction.js'></script>
+    <script src = 'js/time.js'></script>
+    <script src = 'js/background.js'></script>
+    <script src = 'js/notes.js'></script>
+    <script src = 'js/reminders.js'></script>
+
+    <script src = 'js/settings.js'></script>
+</body>
+</html>

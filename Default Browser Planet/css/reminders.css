@@ -1,0 +1,141 @@
+@media screen and (max-width: 1535px){
+    #reminders {
+        background: white;
+        height: fit-content;
+        min-height: 100px;
+        width: 360px;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        margin-top: 150px;
+        border-radius: 0 0 25px 25px;
+        outline: none;
+        padding: 15px 20px;
+        font-family: Calibri;
+        font-size: 17px;
+    }
+}
+@media screen and (min-width: 1535px){
+    #reminders_container {
+        float: right;
+        position: absolute;
+        left: 100px;
+        top: 100px;
+        margin: auto;
+        width: fit-content;
+        height: fit-content;
+        z-index: 6;
+    }
+    #reminders_title {
+        background: white;
+        height: 15px;
+        font-family: Calibri;
+        font-size: 22px;
+        height: fit-content;
+        padding: 5px 10px;
+        padding-bottom: 0;
+        font-weight: bolder;
+        border-radius: 15px 15px 0 0;
+        position: relative;
+    }
+    #reminders {
+        border-top: 3px dashed #10101525;
+        background: #ffffffcc;
+        height: fit-content;
+        min-height: 13px;
+        width: 380px;
+        position: relative;
+        border-radius: 0 0 15px 15px;
+        outline: none;
+        padding: 10px;
+        padding-top: 5px;
+        font-family: Calibri;
+        font-size: 0;
+        white-space: pre;
+        overflow-y: scroll;
+        max-height: 350px;
+        transition: .5s;
+    }
+    #reminders::selection {
+        background: transparent;
+    }
+    #reminders:hover {
+        padding-top: 0;
+    }
+    #reminders:hover > div {
+        height: 150px;
+        padding: 10px 15px;
+        outline: 2px solid #10101525;
+        margin-top: 15px;
+    }
+    #reminders:hover::selection {
+        background:royalblue;
+        color: white;
+    }
+    #reminders_move {
+        position: absolute;
+        right: 10px;
+        bottom: 5px;
+        width: 20px;
+        cursor: pointer;
+    }
+    .reminder_img {
+        display: inline-block;
+        width: fit-content;
+        position: relative;
+        margin-left: 25px;
+        font-size: 20px;
+        font-weight: normal;
+    }
+    .reminder_img img {
+        position: absolute;
+        left: -20px;
+        width: 20px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .reminder {
+        background: white;
+        padding: 15px 20px;
+        position: relative;
+        height: 0;
+        transition: 1.5s;
+        font-size: 0;
+        padding: 0 15px;
+        overflow: hidden;
+        border-radius: 20px;
+        outline: #00000000;
+        margin-top: 0px;
+    }
+    .reminder #re_title_container, .reminder #re_description_container {
+        background: #10101525;
+        height: 50px;
+        margin: 0;
+        margin-top: 10px;
+        font-size: 0;
+        padding: 5px 10px;
+        border-radius: 15px;
+        height: fit-content;
+        outline: 2px solid #10101550;
+    }
+    #re_title_container div {
+        font-size: 22px;
+        font-weight: bold;
+        height: 1.2em;
+    }
+    #re_description_container div {
+        font-size: 17px;
+        overflow-y: scroll;
+        height: 3.9em;
+    }
+
+    .reminder div div {
+        margin: 0;
+        width: 100%;
+        overflow-wrap: break-word;
+        white-space: normal;
+    }
+
+}

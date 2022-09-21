@@ -1,0 +1,124 @@
+#input_container {
+    border: none;
+    border-radius: 25px;
+    width: 465px;
+    height: 42px;
+    padding: 1px 52px;
+    z-index: 3;
+    position: relative;
+    background: white;
+}
+
+#google {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    width: 465px;
+    height: 42px;
+    background: transparent;
+    padding: 1px 52px;
+    font-size: 18px;
+    font-family: Calibri;
+    z-index: 3;
+}
+
+#google_prediction {
+    pointer-events: none;
+    color: blue;
+    border: none;
+    width: 465px;
+    height: 42px;
+    padding: 1px 52px;
+    font-size: 18px;
+    font-family: Calibri;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+}
+
+#google:focus {
+    outline: none;
+}
+
+#google:focus::placeholder {
+    color: transparent;
+}
+
+#google:focus ~ #google_history {
+    z-index: 1;
+    height: 507px;
+    /* height: 495px; */
+    padding: 25px 0 1px 0;
+    pointer-events: all;
+}
+
+#google_history {
+    height: fit-content;
+    padding: 1px 0;
+    height: 0;
+    width: 569px;
+    transition-duration: 1s;
+    transition-property: height, padding;
+    transition-timing-function: ease;
+    background: white;
+    z-index: -1;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 23px;
+    overflow: hidden;
+    border-radius: 0 0 25px 25px;
+}
+
+#google_container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 20px;
+    width: fit-content;
+}
+
+#google_container img {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    width: 20px;
+    opacity: .6;
+    z-index: 4;
+}
+
+.g_e {
+    border: none;
+    border-radius: 0;
+    width: 465px;
+    height: 42px;
+    padding: 1px 52px;
+    font-size: 17px;
+    font-family: Calibri;
+    background: white;
+    transition-duration: .2s;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+}
+
+.g_e div {
+    border-radius: 50px;
+    transition: .2s;
+}
+
+.g_e:hover > div {
+    color: #10101599;
+}
+
+.g_e div:hover {
+    background: #10101520;
+}
+
+.g_e:hover {
+    background: #10101520;
+}
