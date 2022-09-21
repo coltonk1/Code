@@ -14,7 +14,24 @@
 ##### You must change the email with password and phone number (email) in
 > Calendar\test\electron_react\public\main.js
 
-<img src = "https://github.com/coltonk1/Code/blob/main/Calendar/replace-image.png" width=600>
+```
+var transporter = nodemailer.createTransport({
+  service: 'outlook',
+  auth: {
+    user: 'example@outlook.com',
+    pass: 'password'
+  }
+});
+
+function send_text(text){
+console.log(text)
+var mailOptions = {
+  from: 'Calendar <example@outlook.com>',
+  to: '1234567890@vtext.com',
+  subject: '',
+  text: text
+};
+```
 
 ### How to pin shortcut:
 ##### [Article with Steps](https://www.digitalcitizen.life/how-pin-any-folder-windows-7-taskbar/)
