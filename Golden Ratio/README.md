@@ -6,4 +6,4 @@
 ### Goal:
 ##### Calculate the golden ratio.
 
-![Example of project](https://github.com/coltonk1/Code/blob/main/Golden%20Ratio/example-image.png)
+![Example of project](https://github.com/coltonk1/Code/blob/main/Golden%20Ratio/example-image.PNG)
