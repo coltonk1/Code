@@ -14,8 +14,10 @@
 ##### You must change the email with password and phone number (email) in
 > Calendar\test\electron_react\public\main.js
 
-![Example of code](https://github.com/coltonk1/Code/blob/main/Calendar/replace-image.png)
+<img src = "https://github.com/coltonk1/Code/blob/main/Calendar/replace-image.png" width=600>
+
 ### How to pin shortcut:
 ##### [Article with Steps](https://www.digitalcitizen.life/how-pin-any-folder-windows-7-taskbar/)
 ##### app.bat will fully start the program when clicked. Can create shortcut with it.
+
 ![Example of project](https://github.com/coltonk1/Code/blob/main/Calendar/example-image.png)
