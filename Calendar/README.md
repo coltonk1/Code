@@ -11,6 +11,7 @@
 ### How to change email:
 ##### You must change the email with password and phone number (email) in
 > Calendar\test\electron_react\public\main.js
+
 ![Example of code](https://github.com/coltonk1/Code/blob/main/Calendar/replace-image.png)
 ### How to pin shortcut:
 ##### [Article with Steps](https://www.digitalcitizen.life/how-pin-any-folder-windows-7-taskbar/)
