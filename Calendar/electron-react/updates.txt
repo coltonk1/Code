@@ -1,0 +1,9 @@
+Add visual updates per test if it sent
+
+did_not_send = false
+Successfully sent text
+6/28/2022 8:43AM
+
+did_not_send = true
+Attemping to send text
+6/28/2022 8:43AM

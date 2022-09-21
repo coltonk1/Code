@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    user-select: none;
+    font-family: Calibri;
+    color: whitesmoke;
+    transition: .2s;
+    width: fit-content;
+}
+
+body {
+    background: #101015;
+    width: 100vw;
+}
+
+
+h1 {
+    margin: auto;
+}
+
+h2 {
+    margin: auto;
+    color: grey;
+    font-weight: normal;
+}
+
+#root {
+    position: relative;
+    height: 340px;
+    display: inline-block;
+    margin-top: 20px;
+    vertical-align: top;
+}
+
+input[type="button"]{
+    margin: auto;
+    width: 50px;
+    height: 80%;
+    vertical-align: top;
+    margin-top: 72.5px;
+    white-space: normal;
+    margin-bottom: 0;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    background: #ffffff00;
+    font-weight: bolder;
+    font-size: 20px;
+    color: grey;
+    border-radius: 50px;
+}
+
+input[type="button"]:hover{
+    background: #ffffff10;
+    color: whitesmoke;
+}
+
+input[type="button"]:active{
+    background: #ffffff25;
+    color: whitesmoke;
+}
+
+#main_container {
+    position: relative;
+    height: fit-content;
+    display: block;
+    align-items: center;
+    height: 340px;
+}
+
+#calendar_container {
+    display: inline-block;
+}
+
+.row {
+    display: block;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.day, .emptyday {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 25px;
+    text-align: center;
+    margin-right: 2.5px;
+    margin-left: 2.5px;
+}
+
+.day:hover, .emptyday:hover {
+    background: #ffffff20;
+}
+
+.emptyday {
+    color: grey;
+}
+
+#days_container {
+    width: fit-content;
+    
+}
+
+#root2 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#true_root {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

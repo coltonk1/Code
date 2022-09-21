@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Midnight</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <link href = "main.css" rel = "stylesheet">
+  </head>
+  <body>
+    <div id = "wrapper">
+      <div id="menu">
+        <img id = "icon" src = "clock3.png">
+        <div id="exit">x</div>
+        <div id="maxi">□</div>
+        <div id="mini">-</div>
+      </div>
+
+      <div id="true_root">
+          <div id="root"></div>
+          <div id = "root2"></div>
+      </div>
+    </div>
+
+    <script>
+      if(window && window.process && window.process.type)
+        console.log("opened in electron")
+      else{
+        console.log("opened in browser")
+      }
+    </script>
+    
+    <script src = "renderer.js"></script>
+    <script src = 'send_text.js'></script>
+    <script type="text/babel" src = 'react_.js'></script>
+    <script>
+      setInterval(function(){
+        document.getElementById("wrapper").style.height = window.innerHeight + "px"
+      }, 200)
+      function text_me(args){
+        ipcRenderer.send("send_text", args)
+      }
+
+      function fetch_data(){
+        console.log("1")
+        ipcRenderer.send("get_data", "k")
+        console.log("1.5")
+      }
+
+      function set_info(array){
+        let temp_array = JSON.stringify(array);
+        ipcRenderer.send("set_data", temp_array);
+      }
+
+      ipcRenderer.on("get_t", function(e, args){
+        window.send_data_react.get_t(args)
+      })
+
+      ipcRenderer.on("get_data", function(e, args){
+        console.log("3")
+        window.send_data_react.send_d(args)
+      })
+    </script>
+  </body>
+</html>

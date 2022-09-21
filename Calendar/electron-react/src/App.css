@@ -1,0 +1,346 @@
+* {
+  padding: 0;
+  user-select: none;
+  font-family: Calibri;
+  color: whitesmoke;
+  transition: .2s;
+  width: fit-content;
+}
+
+body {
+  background: #10101500;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: #101015;
+  overflow: hidden;
+}
+
+
+h1 {
+  margin: auto;
+}
+
+h2 {
+  margin: auto;
+  color: grey;
+  font-weight: normal;
+}
+
+#root {
+  position: relative;
+  height: 340px;
+  display: inline-block;
+  margin-top: 20px;
+  vertical-align: top;
+}
+
+input[type="button"]{
+  margin: auto;
+  width: 50px;
+  height: 80%;
+  vertical-align: top;
+  margin-top: 112.5px;
+  white-space: normal;
+  margin-bottom: 0;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  background: #ffffff00;
+  font-weight: bolder;
+  font-size: 20px;
+  color: grey;
+  border-radius: 50px;
+}
+
+input[type="button"]:hover{
+  background: #ffffff10;
+  color: whitesmoke;
+}
+
+input[type="button"]:active{
+  background: #ffffff25;
+  color: whitesmoke;
+}
+
+#main_container {
+  position: relative;
+  height: fit-content;
+  display: block;
+  align-items: center;
+  height: 340px;
+}
+
+#calendar_container {
+  display: inline-block;
+}
+
+.row {
+  display: block;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.day, .emptyday {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 25px;
+  text-align: center;
+  margin-right: 2.5px;
+  margin-left: 2.5px;
+}
+
+.day:hover, .emptyday:hover {
+  background: #ffffff20;
+}
+
+.emptyday {
+  color: grey;
+}
+
+#days_container {
+  width: fit-content;
+}
+
+#root2 {
+  position: absolute;
+  right: 830px;
+  left: 0;
+  width: 345px;
+  margin: auto;
+  padding: 10px;
+  height: 92%;
+  overflow-y: scroll;
+}
+
+#true_root {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#menu {
+  background: #151520;
+  height: 30px;
+  width: 100%;
+  -webkit-app-region: drag;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+#exit, #mini, #maxi {
+  font-family: Calibri;
+  padding: 0px 0 5px 0;
+  width: 40px;
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+  color: #ffffff55;
+  transition: .2s;
+  -webkit-app-region: no-drag;
+}
+
+#icon {
+  width: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5px;
+  margin: auto;
+  opacity: .2;
+  filter: brightness(200);
+}
+
+#exit:hover {
+  background: red;
+  color: #ffffff;
+}
+
+#exit:active {
+  background: darkred;
+  color: #ffffff55;
+}
+
+#mini:hover, #maxi:hover {
+  background: #303035;
+}
+
+#mini:active, #maxi:active {
+  background: #404045;
+  color: white;
+}
+
+#information_container {
+  width: 100%;
+}
+
+#information_container h2 {
+  background: #101015;
+  border-top: 15px solid #101015;
+  border-bottom: 1px solid rgb(176, 29, 56);
+  position: sticky;
+  top: -10px;
+  z-index: 3;
+  width: 100%;
+  text-align: center;
+}
+
+.Title {
+  font-weight: bolder;
+  font-size: 25px;
+  width: 90%;
+  color: whitesmoke;
+  padding-bottom: 2.5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.Description {
+  margin-bottom: 30px;
+  width: 90%;
+  padding-left: 10px;
+  color: grey;
+}
+
+.Title, .Description {
+  outline: none;
+  border: 1px solid #ffffff00;
+  border-radius: 15px;
+  margin-left: 30px;
+}
+
+
+.Title:focus, .Description:focus {
+  border: 1px solid #ffffff10;
+}
+
+.remove_button {
+  outline: none;
+  background:rgb(92, 36, 237);
+  background: linear-gradient(to bottom left, rgb(237, 36, 73), rgb(176, 29, 56));
+  overflow: hidden;
+  font-size: 20px;
+  padding-bottom: 5px;
+  padding-right: 9.25px;
+  padding-left: 9.25px;
+  color: whitesmoke;
+  border-radius: 7px;
+  line-height: 1em;
+  cursor: pointer;
+  border: none;
+  font-family: Oswald;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.titleContainer {
+  width: 100%;
+  position: relative;
+}
+
+.remove_button:hover {
+  filter: contrast(1.5);
+  box-shadow: 0px 0px 5px rgb(237, 36, 73);
+}
+
+.remove_button:active {
+  filter: contrast(2.5);
+  box-shadow: 0px 0px 5px rgb(237, 68, 99);
+}
+
+#add_reminder {
+  left: 180px;
+}
+
+#save_reminders {
+  left: 280px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+#add_reminder, #save_reminders {
+  background:rgb(92, 36, 237);
+  background: linear-gradient(to bottom left, rgb(92, 36, 237), rgb(78, 30, 199));
+  padding: 5px 25px;
+  font-size: 1.5em;
+  color: whitesmoke;
+  border-radius: 7px;
+  line-height: 1em;
+  cursor: pointer;
+  border: none;
+  font-family: Oswald;
+  position: fixed;
+  bottom: 20px;
+}
+
+#add_reminder:hover {
+  filter: contrast(1.5);
+  box-shadow: 0px 0px 10px rgb(92, 36, 237);
+}
+
+#save_reminders:hover {
+  filter: contrast(1.5);
+  box-shadow: 0px 0px 10px rgb(92, 36, 237);
+}
+
+#add_reminder:active {
+  filter: contrast(2.5);
+  box-shadow: 0px 0px 7px rgb(109, 60, 234);
+}
+
+#save_reminders:active {
+  filter: contrast(2.5);
+  box-shadow: 0px 0px 7px rgb(109, 60, 234);
+}
+
+#day_titles h2 {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  margin-right: 2.5px;
+  margin-left: 2.5px;
+  font-size: 25px;
+  border-bottom: 1px solid rgb(176, 29, 56);
+}
+
+#EmptyInfo {
+  display: block;
+  overflow-wrap: break-word;
+  line-height: 0px;
+  margin-top: 10px;
+}
+
+#EmptyInfo div {
+  color: grey;
+}
+
+#EmptyInfo h3 {
+  display: inline-block;
+  color: grey;
+}
+
+.ev {
+  color: rgb(176, 29, 56);
+}
