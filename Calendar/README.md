@@ -1,5 +1,7 @@
 # Status:
-#### Complete
+#### Usable / Complete-ish
+### Am I working on this?
+##### Not currently, but I do plan to add more functionality eventually.
 # Project info:
 ### Date created:
 ##### 6/25/22
